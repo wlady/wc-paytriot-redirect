@@ -1,0 +1,14 @@
+{
+    "name": "wlady/wc-paytriot-redirect",
+    "autoload": {
+        "psr-4": {
+            "WCPaytriotRedirect\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir Zabara",
+            "email": "wlady2001@gmail.com"
+        }
+    ]
+}

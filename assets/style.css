@@ -1,0 +1,89 @@
+.payment-cart-form input {
+	width: 100%;
+}
+
+.payment-cart-form input.notvalidfield {
+	border-color: #e30909 !important;
+}
+
+
+/* The Modal (background) */
+#payment_3ds_modal.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#payment_3ds_modal .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* The Close Button */
+#payment_3ds_modal .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#payment_3ds_modal .close:hover,
+#payment_3ds_modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#payment_3ds_modal .modal-content.processing {
+  background: #fff url('/wp-content/plugins/wc-paytriot-redirect/assets/spinner.gif') center center no-repeat;
+}
+
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/unknown.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.618em center;
+  background-size: 32px 20px;
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/amex.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.diners {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/diners.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/discover.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/jcb.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/laser.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/maestro.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/mastercard.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.paypal {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/paypal.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.unknown {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/unknown.svg);
+}
+.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa {
+  background-image: url(/wp-content/plugins/wc-paytriot-redirect/assets/credit-cards/visa.svg);
+}
