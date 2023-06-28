@@ -5,7 +5,7 @@
  * Description: WooCommerce Paytriot Redirect
  * Author: Vladimir Zabara <wlady2001@gmail.com>
  * Author URI: https://github.com/wlady/
- * Version: 1.2.7
+ * Version: 1.2.8
  * Text Domain: wc-paytriot
  * Requires PHP: 7.4
  * Requires at least: 4.7
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 include( dirname( __FILE__ ) . '/vendor/autoload.php' );
 
-define( 'PAYTRIOT_REDIRECT_VERSION', '1.2.7' );
+define( 'PAYTRIOT_REDIRECT_VERSION', '1.2.8' );
 define( 'PAYTRIOT_REDIRECT_SUPPORT_PHP', '7.4' );
 define( 'PAYTRIOT_REDIRECT_SUPPORT_WP', '5.0' );
 define( 'PAYTRIOT_REDIRECT_SUPPORT_WC', '3.0' );

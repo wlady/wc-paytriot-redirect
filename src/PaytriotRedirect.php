@@ -342,7 +342,7 @@ class PaytriotRedirect extends \WC_Payment_Gateway_CC {
 			'amount'            => $amount,
 			'countryCode'       => $this->get_option( 'countryCode' ),
 			'currencyCode'      => $order->get_currency(),
-			'transactionUnique' => $order->get_order_key() . '-' . time(),
+			'transactionUnique' => $order->get_order_key(), // . '-' . time(),
 			'orderRef'          => $order_id,
 			'customerName'      => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
 			'customerAddress'   => $billing_address,
