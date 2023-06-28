@@ -230,6 +230,14 @@ class PaytriotRedirect extends \WC_Payment_Gateway_CC {
 
 		// we need it to get any order details
 		$order = wc_get_order( $order_id );
+
+		if ( $order->is_paid() ) {
+			return [
+				'result'   => 'failure',
+				'messages'  => __( 'Order is already paid. Please check your account', self::TEXT_DOMAIN ),
+			];
+		}
+
 		/*
 		  * get  parameters for API interaction
 		 */
@@ -239,8 +247,10 @@ class PaytriotRedirect extends \WC_Payment_Gateway_CC {
 		$date_parts  = explode( '/', $expire_data );
 
 		if ( empty( $card_number ) || empty( $expire_data ) || empty( $card_cvc ) || count( $date_parts ) != 2 ) {
-			$obj_response['success'] = 0;
-			wp_send_json( $obj_response );
+			return [
+				'result'   => 'failure',
+				'messages'  => __( 'Wrong card data', self::TEXT_DOMAIN ),
+			];
 		}
 
 		$threeDSRedirectURL = $this->get_return_url( $order );
